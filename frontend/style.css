@@ -1,0 +1,112 @@
+body {
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg, #667eea, #764ba2);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+
+.container {
+background: white;
+padding: 25px;
+width: 420px;
+border-radius: 15px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
+text-align: center;
+margin-bottom: 20px;
+color: #333;
+}
+
+.input-section {
+display: flex;
+gap: 10px;
+}
+
+input {
+flex: 1;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 8px;
+transition: 0.2s;
+}
+
+input:focus {
+border-color: #667eea;
+outline: none;
+}
+
+button {
+padding: 12px 15px;
+border: none;
+background: #4CAF50;
+color: white;
+border-radius: 8px;
+cursor: pointer;
+font-weight: bold;
+transition: 0.2s;
+}
+
+button:hover {
+background: #45a049;
+}
+
+ul {
+padding: 0;
+margin-top: 15px;
+}
+
+li {
+list-style: none;
+background: #f1f3f6;
+margin-top: 12px;
+padding: 12px;
+border-radius: 8px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+transition: 0.2s;
+}
+
+li:hover {
+transform: translateY(-2px);
+}
+
+.done {
+text-decoration: line-through;
+color: gray;
+}
+
+.actions button {
+margin-left: 5px;
+padding: 6px 10px;
+border-radius: 6px;
+}
+
+.actions .toggle {
+background: #28a745;
+}
+
+.actions .delete {
+background: #dc3545;
+}
+
+.status {
+margin-left: 10px;
+padding: 3px 8px;
+border-radius: 5px;
+font-size: 12px;
+}
+
+.status.pending {
+background: #ffc107;
+}
+
+.status.done {
+background: #28a745;
+color: white;
+}
